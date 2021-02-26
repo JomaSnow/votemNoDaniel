@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Giphy from "./assets/images/giphy.webp";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <main
+        style={{
+          display: "flex",
+          position: "relative",
+          width: "100%",
+          height: "100vh",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <h1 style={{fontSize:"2.5rem"}}>Votem no DANIEL</h1>
+        <img src={Giphy} alt="gif fofinho pra votar no daniel" />
+      </main>
+    </>
   );
 }
 
